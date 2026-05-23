@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelas AI Gratis 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --card: #12121a;
+    --card2: #1a1a27;
+    --accent1: #7ee8a2;
+    --accent2: #5bc4e0;
+    --accent3: #f4c553;
+    --accent4: #e07aff;
+    --accent5: #ff7a7a;
+    --text: #f0f0f8;
+    --muted: #8888aa;
+    --border: rgba(255,255,255,0.07);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 32px 20px 60px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(126,232,162,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: -150px; right: -150px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(224,122,255,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent1);
+    border: 1px solid rgba(126,232,162,0.3);
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(126,232,162,0.05);
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 6vw, 56px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    margin-bottom: 14px;
+  }
+
+  h1 .highlight {
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .divider-line {
+    width: 48px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent1), transparent);
+    margin: 20px auto 0;
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 22px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--stripe-color, var(--accent1));
+    opacity: 0.7;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255,255,255,0.14);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  }
+
+  .card-glow {
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: var(--glow-color, rgba(126,232,162,0.06));
+    pointer-events: none;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+
+  .platform-logo {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    background: var(--logo-bg, rgba(255,255,255,0.06));
+    flex-shrink: 0;
+  }
+
+  .card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: var(--badge-bg, rgba(126,232,162,0.12));
+    color: var(--badge-color, var(--accent1));
+    border: 1px solid var(--badge-border, rgba(126,232,162,0.2));
+    white-space: nowrap;
+  }
+
+  .card-platform {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+  }
+
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.55;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    gap: 8px;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .meta-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .meta-icon { font-size: 10px; }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--btn-color, var(--accent1));
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--btn-border, rgba(126,232,162,0.25));
+    background: var(--btn-bg, rgba(126,232,162,0.07));
+    transition: all 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .card:hover .link-btn {
+    opacity: 0.85;
+  }
+
+  .arrow { font-size: 9px; }
+
+  /* FEATURED CARD — spans 2 cols */
+  .card.featured {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 600px) {
+    .card.featured { grid-column: span 1; }
+  }
+
+  .featured-inner {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 520px) {
+    .featured-inner { flex-direction: column; }
+  }
+
+  .featured-left { flex: 1; }
+  .featured-right {
+    flex-shrink: 0;
+    width: 170px;
+  }
+
+  .stat-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* FOOTER NOTE */
+  .footer-note {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .footer-note strong {
+    color: var(--text);
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    margin-top: 10px;
+    padding-left: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="eyebrow">✦ Updated 2025–2026</div>
+    <h1>Kelas AI<br><span class="highlight">100% Gratis</span></h1>
+    <p class="subtitle">Platform terpercaya dari Google, Microsoft, dan lembaga riset AI dunia — semua bisa diakses tanpa biaya.</p>
+    <div class="divider-line"></div>
+  </header>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent1)"></div> Pemula</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent3)"></div> Menengah</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent5)"></div> Lanjutan</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent4)"></div> Sertifikat</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div> Non-Teknis</div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <!-- 1. Google AI Essentials — FEATURED -->
+    <a class="card featured" href="https://www.coursera.org/learn/google-ai-essentials" target="_blank"
+      style="--stripe-color:var(--accent1); --glow-color:rgba(126,232,162,0.07);">
+      <div class="card-glow"></div>
+      <div class="featured-inner">
+        <div class="featured-left">
+          <div class="card-top">
+            <div class="platform-logo" style="--logo-bg:rgba(126,232,162,0.1);">🟢</div>
+            <div class="card-badges">
+              <span class="badge" style="--badge-bg:rgba(126,232,162,0.12);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.25);">Pemula</span>
+              <span class="badge" style="--badge-bg:rgba(224,122,255,0.1);--badge-color:var(--accent4);--badge-border:rgba(224,122,255,0.2);">Sertifikat</span>
+              <span class="badge" style="--badge-bg:rgba(91,196,224,0.1);--badge-color:var(--accent2);--badge-border:rgba(91,196,224,0.2);">Non-Teknis</span>
+            </div>
+          </div>
+          <div class="card-platform">Google · Coursera</div>
+          <div class="card-title">Google AI Essentials</div>
+          <div class="card-desc">Kursus resmi dari Google untuk belajar dasar-dasar AI, prompt engineering, dan cara meningkatkan produktivitas kerja menggunakan AI. Cocok untuk semua latar belakang, tidak perlu coding.</div>
+          <div class="card-footer">
+            <div class="card-meta">
+              <div class="meta-row"><span class="meta-icon">⏱</span> ~8–10 jam</div>
+              <div class="meta-row"><span class="meta-icon">📜</span> Sertifikat tersedia</div>
+            </div>
+            <div class="link-btn" style="--btn-color:var(--accent1);--btn-border:rgba(126,232,162,0.3);--btn-bg:rgba(126,232,162,0.08);">
+              Akses ↗
+            </div>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div class="stat-box">
+            <div class="stat-num">3M+</div>
+            <div class="stat-label">Enrollments</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">FREE</div>
+            <div class="stat-label">100% Gratis</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 2. AI for Everyone -->
+    <a class="card" href="https://www.coursera.org/learn/ai-for-everyone" target="_blank"
+      style="--stripe-color:var(--accent2); --glow-color:rgba(91,196,224,0.06);">
+      <div class="card-glow" style="background:rgba(91,196,224,0.05)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(91,196,224,0.1);">🔵</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(91,196,224,0.1);--badge-color:var(--accent2);--badge-border:rgba(91,196,224,0.2);">Non-Teknis</span>
+          <span class="badge" style="--badge-bg:rgba(126,232,162,0.1);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.2);">Pemula</span>
+        </div>
+      </div>
+      <div class="card-platform">DeepLearning.AI · Coursera</div>
+      <div class="card-title">AI for Everyone</div>
+      <div class="card-desc">Diajarkan Andrew Ng. Memahami AI, cara kerja proyek AI, dan strategi bisnis AI. Lebih dari 1 juta pelajar global.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> ~6 jam</div>
+          <div class="meta-row"><span class="meta-icon">👤</span> Andrew Ng</div>
+        </div>
+        <div class="link-btn" style="--btn-color:var(--accent2);--btn-border:rgba(91,196,224,0.3);--btn-bg:rgba(91,196,224,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 3. Microsoft Generative AI -->
+    <a class="card" href="https://learn.microsoft.com/en-us/training/paths/introduction-generative-ai/" target="_blank"
+      style="--stripe-color:#60a5fa; --glow-color:rgba(96,165,250,0.05);">
+      <div class="card-glow" style="background:rgba(96,165,250,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(96,165,250,0.1);">🪟</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(244,197,83,0.1);--badge-color:var(--accent3);--badge-border:rgba(244,197,83,0.2);">Menengah</span>
+          <span class="badge" style="--badge-bg:rgba(224,122,255,0.1);--badge-color:var(--accent4);--badge-border:rgba(224,122,255,0.2);">Sertifikat</span>
+        </div>
+      </div>
+      <div class="card-platform">Microsoft Learn</div>
+      <div class="card-title">Generative AI for Beginners</div>
+      <div class="card-desc">Kurikulum 12 minggu dari Microsoft: NLP, neural networks, prompt engineering, hingga membangun aplikasi AI. Gratis penuh di GitHub.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> 12 minggu</div>
+          <div class="meta-row"><span class="meta-icon">🌐</span> microsoft.com/learn</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#60a5fa;--btn-border:rgba(96,165,250,0.3);--btn-bg:rgba(96,165,250,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 4. Google ML Crash Course -->
+    <a class="card" href="https://developers.google.com/machine-learning/crash-course" target="_blank"
+      style="--stripe-color:var(--accent3); --glow-color:rgba(244,197,83,0.05);">
+      <div class="card-glow" style="background:rgba(244,197,83,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(244,197,83,0.1);">⚡</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(244,197,83,0.1);--badge-color:var(--accent3);--badge-border:rgba(244,197,83,0.2);">Menengah</span>
+          <span class="badge" style="background:rgba(255,122,122,0.1);color:var(--accent5);border:1px solid rgba(255,122,122,0.2);">Dev</span>
+        </div>
+      </div>
+      <div class="card-platform">Google Developers</div>
+      <div class="card-title">Machine Learning Crash Course</div>
+      <div class="card-desc">Kursus intensif dari Google tentang ML: regression, classification, neural networks, dan deploy model ke produksi.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> ~15 jam</div>
+          <div class="meta-row"><span class="meta-icon">💻</span> Python diperlukan</div>
+        </div>
+        <div class="link-btn" style="--btn-color:var(--accent3);--btn-border:rgba(244,197,83,0.3);--btn-bg:rgba(244,197,83,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 5. Kaggle 5-Day GenAI -->
+    <a class="card" href="https://www.kaggle.com/learn-guide/5-day-genai" target="_blank"
+      style="--stripe-color:var(--accent4); --glow-color:rgba(224,122,255,0.05);">
+      <div class="card-glow" style="background:rgba(224,122,255,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(224,122,255,0.1);">🐚</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(244,197,83,0.1);--badge-color:var(--accent3);--badge-border:rgba(244,197,83,0.2);">Menengah</span>
+          <span class="badge" style="background:rgba(255,122,122,0.1);color:var(--accent5);border:1px solid rgba(255,122,122,0.2);">Hands-on</span>
+        </div>
+      </div>
+      <div class="card-platform">Kaggle × Google</div>
+      <div class="card-title">5-Day Gen AI Intensive</div>
+      <div class="card-desc">Kursus intensif 5 hari dari Kaggle & Google: Transformer, prompt engineering, Gemini API, LangGraph, dan Vertex AI — langsung praktik di notebook.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> 5 hari self-paced</div>
+          <div class="meta-row"><span class="meta-icon">👥</span> 160.000+ pelajar</div>
+        </div>
+        <div class="link-btn" style="--btn-color:var(--accent4);--btn-border:rgba(224,122,255,0.3);--btn-bg:rgba(224,122,255,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 6. Hugging Face LLM Course -->
+    <a class="card" href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank"
+      style="--stripe-color:var(--accent5); --glow-color:rgba(255,122,122,0.05);">
+      <div class="card-glow" style="background:rgba(255,122,122,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(255,122,122,0.1);">🤗</div>
+        <div class="card-badges">
+          <span class="badge" style="background:rgba(255,122,122,0.1);color:var(--accent5);border:1px solid rgba(255,122,122,0.2);">Lanjutan</span>
+          <span class="badge" style="--badge-bg:rgba(91,196,224,0.1);--badge-color:var(--accent2);--badge-border:rgba(91,196,224,0.2);">LLM</span>
+        </div>
+      </div>
+      <div class="card-platform">Hugging Face</div>
+      <div class="card-title">LLM Course</div>
+      <div class="card-desc">Dari NLP dasar hingga fine-tuning dan deploy LLM menggunakan library Transformers. Gratis total, komunitas aktif.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">💻</span> Python & PyTorch</div>
+          <div class="meta-row"><span class="meta-icon">📖</span> Self-paced</div>
+        </div>
+        <div class="link-btn" style="--btn-color:var(--accent5);--btn-border:rgba(255,122,122,0.3);--btn-bg:rgba(255,122,122,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 7. Hugging Face AI Agents -->
+    <a class="card" href="https://huggingface.co/learn/agents-course/en/unit0/introduction" target="_blank"
+      style="--stripe-color:#ff9f47; --glow-color:rgba(255,159,71,0.05);">
+      <div class="card-glow" style="background:rgba(255,159,71,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(255,159,71,0.1);">🤖</div>
+        <div class="card-badges">
+          <span class="badge" style="background:rgba(255,122,122,0.1);color:var(--accent5);border:1px solid rgba(255,122,122,0.2);">Lanjutan</span>
+          <span class="badge" style="background:rgba(255,159,71,0.1);color:#ff9f47;border:1px solid rgba(255,159,71,0.2);">AI Agent</span>
+        </div>
+      </div>
+      <div class="card-platform">Hugging Face</div>
+      <div class="card-title">AI Agents Course</div>
+      <div class="card-desc">Bangun AI agents dari nol dengan smol-agents, LlamaIndex, dan LangGraph. Experiment langsung di Hugging Face Spaces.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">🏗️</span> Project-based</div>
+          <div class="meta-row"><span class="meta-icon">👥</span> Community-driven</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#ff9f47;--btn-border:rgba(255,159,71,0.3);--btn-bg:rgba(255,159,71,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 8. Elements of AI -->
+    <a class="card" href="https://www.elementsofai.com/" target="_blank"
+      style="--stripe-color:#a78bfa; --glow-color:rgba(167,139,250,0.05);">
+      <div class="card-glow" style="background:rgba(167,139,250,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(167,139,250,0.1);">🎓</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(126,232,162,0.1);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.2);">Pemula</span>
+          <span class="badge" style="--badge-bg:rgba(224,122,255,0.1);--badge-color:var(--accent4);--badge-border:rgba(224,122,255,0.2);">Sertifikat</span>
+        </div>
+      </div>
+      <div class="card-platform">Univ. of Helsinki</div>
+      <div class="card-title">Elements of AI</div>
+      <div class="card-desc">Kursus paling ramah pemula dari Universitas Helsinki. Tidak perlu coding. Tersedia dalam banyak bahasa, sertifikat gratis.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> ~30 jam</div>
+          <div class="meta-row"><span class="meta-icon">🌍</span> elementsofai.com</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#a78bfa;--btn-border:rgba(167,139,250,0.3);--btn-bg:rgba(167,139,250,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 9. OpenAI Academy -->
+    <a class="card" href="https://academy.openai.com" target="_blank"
+      style="--stripe-color:#34d399; --glow-color:rgba(52,211,153,0.05);">
+      <div class="card-glow" style="background:rgba(52,211,153,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(52,211,153,0.1);">⚫</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(126,232,162,0.1);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.2);">Pemula</span>
+          <span class="badge" style="--badge-bg:rgba(91,196,224,0.1);--badge-color:var(--accent2);--badge-border:rgba(91,196,224,0.2);">Non-Teknis</span>
+        </div>
+      </div>
+      <div class="card-platform">OpenAI</div>
+      <div class="card-title">OpenAI Academy</div>
+      <div class="card-desc">Platform resmi OpenAI untuk belajar dasar ChatGPT, prompt engineering, dan aplikasi bisnis AI. Kursus dasar tersedia gratis.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">🆕</span> Baru 2025</div>
+          <div class="meta-row"><span class="meta-icon">🌐</span> academy.openai.com</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#34d399;--btn-border:rgba(52,211,153,0.3);--btn-bg:rgba(52,211,153,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 10. IBM AI Fundamentals -->
+    <a class="card" href="https://skills.yourlearning.ibm.com/activity/PLAN-7513B3132B77" target="_blank"
+      style="--stripe-color:#60a5fa; --glow-color:rgba(96,165,250,0.05);">
+      <div class="card-glow" style="background:rgba(96,165,250,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(96,165,250,0.1);">🔷</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(126,232,162,0.1);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.2);">Pemula</span>
+          <span class="badge" style="--badge-bg:rgba(224,122,255,0.1);--badge-color:var(--accent4);--badge-border:rgba(224,122,255,0.2);">Sertifikat</span>
+        </div>
+      </div>
+      <div class="card-platform">IBM SkillsBuild</div>
+      <div class="card-title">AI Fundamentals</div>
+      <div class="card-desc">Sertifikasi AI dari IBM: konsep machine learning, computer vision, NLP, dan etika AI. Gratis dengan sertifikat resmi IBM.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">📜</span> Badge IBM</div>
+          <div class="meta-row"><span class="meta-icon">🌐</span> skillsbuild.org</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#60a5fa;--btn-border:rgba(96,165,250,0.3);--btn-bg:rgba(96,165,250,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 11. Google Prompting Essentials -->
+    <a class="card" href="https://www.coursera.org/learn/google-prompting-essentials" target="_blank"
+      style="--stripe-color:var(--accent1); --glow-color:rgba(126,232,162,0.05);">
+      <div class="card-glow"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(126,232,162,0.1);">✍️</div>
+        <div class="card-badges">
+          <span class="badge" style="--badge-bg:rgba(126,232,162,0.1);--badge-color:var(--accent1);--badge-border:rgba(126,232,162,0.2);">Pemula</span>
+          <span class="badge" style="--badge-bg:rgba(224,122,255,0.1);--badge-color:var(--accent4);--badge-border:rgba(224,122,255,0.2);">Sertifikat</span>
+        </div>
+      </div>
+      <div class="card-platform">Google · Coursera</div>
+      <div class="card-title">Prompting Essentials</div>
+      <div class="card-desc">Fokus khusus pada prompt engineering dari Google. Belajar cara menulis prompt yang efektif untuk berbagai kebutuhan kerja.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">⏱</span> ~5 jam</div>
+          <div class="meta-row"><span class="meta-icon">🎯</span> Praktis</div>
+        </div>
+        <div class="link-btn" style="--btn-color:var(--accent1);--btn-border:rgba(126,232,162,0.3);--btn-bg:rgba(126,232,162,0.08);">Akses ↗</div>
+      </div>
+    </a>
+
+    <!-- 12. fast.ai -->
+    <a class="card" href="https://course.fast.ai" target="_blank"
+      style="--stripe-color:#fb923c; --glow-color:rgba(251,146,60,0.05);">
+      <div class="card-glow" style="background:rgba(251,146,60,0.04)"></div>
+      <div class="card-top">
+        <div class="platform-logo" style="background:rgba(251,146,60,0.1);">🚀</div>
+        <div class="card-badges">
+          <span class="badge" style="background:rgba(255,122,122,0.1);color:var(--accent5);border:1px solid rgba(255,122,122,0.2);">Lanjutan</span>
+          <span class="badge" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.2);">Deep Learning</span>
+        </div>
+      </div>
+      <div class="card-platform">fast.ai</div>
+      <div class="card-title">Practical Deep Learning</div>
+      <div class="card-desc">Pendekatan top-down: langsung latih image classifier sebelum belajar teorinya. Menggunakan PyTorch, fastai, Hugging Face, dan Gradio.</div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <div class="meta-row"><span class="meta-icon">💻</span> Python & PyTorch</div>
+          <div class="meta-row"><span class="meta-icon">🌐</span> course.fast.ai</div>
+        </div>
+        <div class="link-btn" style="--btn-color:#fb923c;--btn-border:rgba(251,146,60,0.3);--btn-bg:rgba(251,146,60,0.07);">Akses ↗</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-note">
+    <strong>✦ Semua link di atas aktif & gratis diakses.</strong><br>
+    Beberapa platform menawarkan audit gratis; sertifikat mungkin berbayar.<br>
+    Klik kartu langsung untuk membuka platform · Data diverifikasi Mei 2026
+  </div>
+
+</div>
+</body>
+</html>
